@@ -314,4 +314,7 @@ fi
 synchronizePanes ${SYNCHRONIZE_PANES} ${TMUX_SESSION_NAME}
 
 # Attach to tmux session
-tmux attach-session -t "${TMUX_SESSION_NAME}"
+#tmux attach-session -t "${TMUX_SESSION_NAME}"
+
+# Move window to current session
+tmux move-window -s "${TMUX_SESSION_NAME}":1
